@@ -47,14 +47,17 @@ body {
 .footer{
     display: flex;
     font-size: 10px;
-    gap: 13px;
+    gap: 16px;
     position: absolute;
-    bottom: 0;;
+    bottom: 0;
+    flex-wrap: wrap;
+    padding: 10px 0;
 }
 
 .footer a{
     color: grey;
     text-decoration: none;
+    
 }
 
 .right{
@@ -84,6 +87,9 @@ body {
     display: flex;
     gap: 10px;
     flex-wrap: wrap;
+    margin: 30px;
+    max-height: 70vh;
+    overflow: scroll;
 }
 
 .card{
@@ -91,6 +97,7 @@ body {
     padding: 10px;
     border-radius: 5px;
     background-color: #252525;
+    position: relative;
 }
 
 .card img{
@@ -100,4 +107,57 @@ body {
 
 .card > *{
     padding-top: 10px;
+}
+
+.play{
+    width: 28px;
+    height: 28px;
+    background-color: #1DB954;
+    border-radius: 50%;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 200px;
+    right: 17px;
+    opacity: 0;
+    transition: all 0.5s ease-out;
+}
+
+.card:hover .play{
+    opacity: 1;
+    top: 168px;
+}
+
+.signBtn{
+    background-color: #222222;
+    color: rgb(167, 165, 165);
+    font-weight: bold;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    padding: 10px;
+}
+
+.signBtn:hover{
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.loginBtn{
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    border-radius: 20px ;
+    outline: none;
+    font-size: 14px;
+    padding: 10px;
+}
+
+.loginBtn:hover{
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    cursor: pointer;
 }

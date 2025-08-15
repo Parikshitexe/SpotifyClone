@@ -15,12 +15,11 @@
     <body>
         
         
-        <script src="" async defer></script>
         <div class="container flex bg-black">
         <div class="left">
             <div class="home bg-grey rounded m-1 p-1">
                 <div class="logo">
-                    <img src="logo.svg" alt="logo" class="invert"></div>
+                    <img src="logo.svg" alt="logo" class="invert"><span>Spotify</span></div>
                 <ul>
                 <li><img src="home.svg" alt="home" class="invert">Home</li>
                 <li><img src="search.svg" alt="search" class="invert">Search</li>
@@ -28,7 +27,17 @@
             </div>
             <div class="library bg-grey rounded m-1 p-1">
                 <div class="heading">
+                    <img src="playlist.svg" alt="" class="invert">
                 <h2>Your Library</h2>
+                </div>
+
+                <div class="songList">
+                    <ul>
+                        
+                    </ul>
+                </div>
+
+                
                 <div class="footer">
                 
                     <div><a href="https://www.spotify.com/in-en/legal/">Legal</a></div>
@@ -38,7 +47,7 @@
                     <div><a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3">About Ads</a></div>
                     <div><a href="https://www.spotify.com/in-en/accessibility/">Accessibility</a></div>
                   
-                            </div>
+                        
                 </div>
             </div>
             
@@ -97,6 +106,7 @@
                     <div class="card">
                         <div class="play">
                             <img src="playBtn.svg" alt="play">
+                            
                         </div>
                         <img src="https://i.scdn.co/image/ab67616d00001e0225fa8e214ad888b7d291f25e" alt="">
                         <h2>Monica (From "Coolie") (Tamil)</h2>
@@ -131,14 +141,22 @@
                     </div>
                 </div>
                 <div class="playbar">
-                    <div class="songInfo"></div>
+                    <div class="seekbar">
+                        <div class="circle">
+
+                        </div>
+                    </div>
+                    <div class="abovebar">
+                    <div class="songinfo"></div>
                     <div class="songButtons">
-                    <img src="prevBtn.svg" alt="player" class="invert">
-                    <img src="play.svg" alt="player" class="invert">
-                    <img src="nextBtn.svg" alt="player" class="invert">
+                    <img id="previous" src="prevBtn.svg" alt="player" class="invert">
+                    <img id="play" src="play.svg" alt="player" class="invert">
+                    
+                    <img id="next" src="nextBtn.svg" alt="player" class="invert">
                     </div>
                     <div class="songtime"></div>
                 </div>
+            </div>
             </div>
         </div>
         </div>

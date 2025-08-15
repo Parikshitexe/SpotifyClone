@@ -66,8 +66,9 @@ body {
 }
 
 .library{
-    min-height: 80vh;
+    min-height: 100vh;
     position: relative;
+    
 }
 
 .header {
@@ -91,7 +92,7 @@ body {
     gap: 10px;
     flex-wrap: wrap;
     margin: 30px;
-    max-height: 70vh;
+    max-height: 100vh;
     overflow: scroll;
 }
 
@@ -173,11 +174,14 @@ body {
 }
 
 .playbar{
-    position: absolute;
-    bottom: 0;
-    background-color: rgb(0, 0, 0);
-    width: 100%;
+    position: fixed;
+    filter: invert(1);
+    bottom: 10px;
+    background-color: rgba(81, 80, 80, 0.812);
+    width: 70vw;
     padding: 12px;
+    border-radius: 15px;
+    height: 40px;
 }
 
 .songButtons{
@@ -186,3 +190,98 @@ body {
     gap: 12px;
 }
 
+.songList ul{
+    padding: 0 12px;
+
+}
+
+.songList ul li{
+    list-style-type: decimal;
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    cursor: pointer;
+    padding: 12px 0;
+    border: 1px solid white;
+    margin: 12px 0;
+    padding: 13px;
+    border-radius: 5px;
+}
+
+.playnow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.playnow span{
+    font-size: 15px;
+    width: 64px;
+    padding: 12px;
+}
+
+.songList .info{
+    font-size: 13px;
+    width: 344px;
+}
+
+.songList{
+    height: 560px;
+    overflow: scroll;
+    margin-bottom: 30px;
+}
+
+.seekbar{
+    height: 4px;
+    width: 96%;
+    border: 2px solid white;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0;
+    margin: 6px;
+    cursor: pointer;
+}
+
+.circle{
+    width: 13px;
+    height: 13px;
+    border-radius: 13px;
+    background-color: white;
+    position: relative;
+    bottom: 6px;
+    left: 0;
+    transition: left 0.5s;
+}
+
+.songButtons img{
+    cursor: pointer;
+}
+
+.abovebar{
+    display: flex;
+    justify-content: space-between;
+}
+
+.songinfo, .songtime{
+    color: white;
+    padding: 0 12px;
+}
+
+.logo span{
+    position: relative;
+    bottom: 8px;
+    padding: 4px;
+    font-weight: bold;
+}
+
+@media (max-width: 1400px){
+    .left{
+        background-color: red;
+        position: absolute;
+        left: -100%;
+        transition: all .3s;
+        z-index: 1;
+
+    }
+}
+    

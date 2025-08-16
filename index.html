@@ -7,9 +7,9 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="utility.css">
-        <link rel="icon" type="image/png" href="favicon1.png" sizes="48x48">
+        <link rel="stylesheet" href="CSS/style.css">
+        <link rel="stylesheet" href="CSS/utility.css">
+        <link rel="icon" type="image/png" href="img/favicon1.png" sizes="48x48">
 
     </head>
     <body>
@@ -17,17 +17,20 @@
         
         <div class="container flex bg-black">
         <div class="left">
+            <div class="close">
+                <img src="img/close.svg" alt="close" class="invert">
+            </div>
             <div class="home bg-grey rounded m-1 p-1">
                 <div class="logo">
-                    <img src="logo.svg" alt="logo" class="invert"><span>Spotify</span></div>
+                    <img src="img/logo.svg" alt="logo" class="invert"><span>Spotify</span></div>
                 <ul>
-                <li><img src="home.svg" alt="home" class="invert">Home</li>
-                <li><img src="search.svg" alt="search" class="invert">Search</li>
+                <li><img src="img/home.svg" alt="home" class="invert">Home</li>
+                <li><img src="img/search.svg" alt="search" class="invert">Search</li>
                 </ul>
             </div>
             <div class="library bg-grey rounded m-1 p-1">
                 <div class="heading">
-                    <img src="playlist.svg" alt="" class="invert">
+                    <img src="img/playlist.svg" alt="" class="invert">
                 <h2>Your Library</h2>
                 </div>
 
@@ -55,8 +58,11 @@
         <div class="right bg-grey rounded"> 
             <div class="header">
                 <div class="nav">
-                    <img src="left-arrow.svg" alt="logo">
-                    <img src="right-arrow.svg" alt="logo">
+                    <div class="hamburgerContainer">
+                    <img src="img/hamburger.svg" alt="hamburger" class="invert hamburger">
+                    <img src="img/left-arrow.svg" alt="logo">
+                    <img src="img/right-arrow.svg" alt="logo">
+                    </div>
                 </div>
                 <div class="buttons">
             
@@ -67,78 +73,7 @@
             <div class="spotifyPlaylists">
                 <h1>Spotify Playlists</h1>
                 <div class="cardContainer">
-                    <div class="card">
-                        <div class="play">
-                            <img src="playBtn.svg" alt="play">
-                        </div>
-                        <img src="https://i.scdn.co/image/ab67616d00001e02d5754cde395f5c46792186c7" alt="" >
-                        <h2>Pardesiya - From "Param Sundari"</h2>
-                        <p>Sachin-Jigar & Sonu Nigam</p>
-                    </div>
-
-                    <div class="card">
-                        <div class="play">
-                            <img src="playBtn.svg" alt="play">
-                        </div>
-                        <img src="https://i.scdn.co/image/ab67616d00001e021a3bf4e253476962f3fd1169" alt="">
-                        <h2>MF Gabhru!</h2>
-                        <p>Karan Aujla</p>
-                    </div>
-
-                    <div class="card">
-                        <div class="play">
-                            <img src="playBtn.svg" alt="play">
-                        </div>
-                        <img src="https://i.scdn.co/image/ab67616d00001e02eb0516ec1c97c3cc97f4cb61" alt="">
-                        <h2>Thodi Si Daaru</h2>
-                        <p>AP Dhillon</p>
-                    </div>
-
-                    <div class="card">
-                        <div class="play">
-                            <img src="playBtn.svg" alt="play">
-                        </div>
-                        <img src="https://i.scdn.co/image/ab67616d00001e0203628829456a6d3f476ce12e" alt="">
-                        <h2>Aavan Jaavan (From "WAR 2")</h2>
-                        <p>Pritam & Arijit Singh</p>
-                    </div>
-
-                    <div class="card">
-                        <div class="play">
-                            <img src="playBtn.svg" alt="play">
-                            
-                        </div>
-                        <img src="https://i.scdn.co/image/ab67616d00001e0225fa8e214ad888b7d291f25e" alt="">
-                        <h2>Monica (From "Coolie") (Tamil)</h2>
-                        <p>Anirudh Ravichander</p>
-                    </div>
-
-                    <div class="card">
-                        <div class="play">
-                            <img src="playBtn.svg" alt="play">
-                        </div>
-                        <img src="https://i.scdn.co/image/ab67616d00001e026404721c1943d5069f0805f3" alt="">
-                        <h2>Aashiqui 2</h2>
-                        <p>Mithoon & Ankit Tiwari</p>
-                    </div>
-
-                    <div class="card">
-                        <div class="play">
-                            <img src="playBtn.svg" alt="play">
-                        </div>
-                        <img src="https://i.scdn.co/image/ab67616d00001e02707ea5b8023ac77d31756ed4" alt="">
-                        <h2>Yeh Jawaani Hai Deewani</h2>
-                        <p>Pritam</p>
-                    </div>
-
-                    <div class="card">
-                        <div class="play">
-                            <img src="playBtn.svg" alt="play">
-                        </div>
-                        <img src=https://i.scdn.co/image/ab67616d00001e02711c1639b4bc0f9978ae77a6 alt="">
-                        <h2>Sanam Teri Kasam</h2>
-                        <p>Himesh Reshammiya</p>
-                    </div>
+                    
                 </div>
                 <div class="playbar">
                     <div class="seekbar">
@@ -149,17 +84,27 @@
                     <div class="abovebar">
                     <div class="songinfo"></div>
                     <div class="songButtons">
-                    <img id="previous" src="prevBtn.svg" alt="player" class="invert">
-                    <img id="play" src="play.svg" alt="player" class="invert">
+                    <img width="35px" id="previous" src="img/prevBtn.svg" alt="player" class="invert">
+                    <img width="35px" id="play" src="img/play.svg" alt="player" class="invert">
                     
-                    <img id="next" src="nextBtn.svg" alt="player" class="invert">
+                    <img width="35px" id="next" src="img/nextBtn.svg" alt="player" class="invert">
                     </div>
-                    <div class="songtime"></div>
+                    <div class="timevol">
+                    <div class="songtime">
+
+                    </div>
+                    <div class="volume">
+                        <img width="25px" src="img/volume.svg" alt="volume" class="invert">
+                        <div class="range">
+                            <input type="range" name="volume" id="">
+                        </div>
+                    </div>
+                </div>
                 </div>
             </div>
             </div>
         </div>
         </div>
-        <script src="script.js"></script>
+        <script src="JS/script.js"></script>
     </body>
 </html>
